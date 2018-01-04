@@ -12,9 +12,9 @@
     "clean": "rimraf lib dist es coverage",
     "lint": "eslint src test",
     "prepare": "npm run clean && npm run build",
-    "test": "cross-env BABEL_ENV=commonjs NODE_ENV=test mocha --compilers js:babel-register --recursive --require ./test/setup.js",
+    "test": "cross-env BABEL_ENV=test NODE_ENV=test mocha --compilers js:babel-register --recursive --require ./test/setup.js",
     "test:watch": "npm test -- --watch",
-    "test:cov": "cross-env NODE_ENV=test nyc npm test",
+    "test:cov": "cross-env NODE_ENV=test BABEL_ENV=test nyc --all npm test",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
@@ -109,6 +109,13 @@
   },
   "nyc": {
     "sourceMap": false,
-    "instrument": false
+    "instrument": false,
+    "include": [
+      "src/**/*.js"
+    ],
+    "require": [
+      "babel-register",
+      "./test/setup.js"
+    ]
   }
 }
