@@ -4,7 +4,8 @@ Vue Redux
 Vue bindings for [Redux](https://github.com/reactjs/redux).  
 Performant and flexible.
 
-[![build status](https://img.shields.io/travis/jnields/vue-redux/master.svg?style=flat-square)](https://travis-ci.org/jnields/vue-redux) [![npm version](https://img.shields.io/npm/v/@jnields/vue-redux.svg?style=flat-square)](https://www.npmjs.com/package/@jnields/vue-redux)
+[![build status](https://img.shields.io/travis/jnields/vue-redux/master.svg?style=flat-square)](https://travis-ci.org/jnields/vue-redux) [![npm version](https://img.shields.io/npm/v/@jnields/vue-redux.svg?style=flat-square)](https://www.npmjs.com/package/@jnields/vue-redux) [![Coverage Status](https://coveralls.io/repos/github/jnields/vue-redux/badge.svg?branch=master)](https://coveralls.io/github/jnields/vue-redux?branch=master)
+
 
 ## Installation
 

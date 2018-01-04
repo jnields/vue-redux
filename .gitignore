@@ -1,6 +1,7 @@
 dist
 lib
 es
+.coveralls.yml
 
 # Logs
 logs
