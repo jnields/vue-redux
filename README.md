@@ -12,7 +12,7 @@ Performant and flexible.
 Vue Redux requires **Vue 2.2.1 or later.**
 
 ```
-npm install --save vueredux
+npm install --save @jnields/vue-redux
 ```
 
 This assumes that you’re using [npm](http://npmjs.com/) package manager with a module bundler like [Webpack](https://webpack.js.org/) or [Browserify](http://browserify.org/) to consume [CommonJS modules](http://webpack.github.io/docs/commonjs.html).

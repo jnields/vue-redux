@@ -1,8 +1,17 @@
 language: node_js
 node_js:
-  - "8"
+  - '8'
 script:
   - npm run lint
   - npm run test:cov
 after_success:
   - npm run coverage
+deploy:
+  provider: npm
+  email: jnields@gmail.com
+  on:
+    tags: true
+    branch: master
+  skip_cleanup: true
+  api_key:
+    secure: hYDXv5601uzEH81jpSQU2clByWQxJZk2L6M2pFZa77D0Ao5sd/KKKFQD4gbJ6gantLAe0yD/hZwhyiSkxWYo21IjLBfJrJvdlJkE4tnyPR1GqSec7the+fkvrOJevCf8iZLD6QdWLGcpeLeVDHc5W3DqOFVTNr9Da+p0sv9/TcyefpAeivkfpg1kXKsF3w7ZYnrXEtzuxxSckMNeRQQNxI7l6YlkFPOia1tCIfcJIJEtoI+VsJJXXu0Y06HnfYavTuj526EcivQ6WocRwfN3uJ5CQkLKKTTLcmoap9rKh6Cm/diqmr4BUzC6VSmo81FsdHGKsHDSbuyT2SoK9dqKDHEkQvOLdefzpC98tFXYP6/cI9EuUZz+qJHWP+jGp3UinkL8bNITg1Soeb7GhXtNnqzHrSRYN1kkJ6vLCrwGkJ/fSo6/MLHlFgOJPhd51+ZtHh0DHZwWekCyrvxCdeXgKdgJ66FNAuQ0J4Q2+q1fttixKxLpWsO7lJL+ioirKcUHq79jWNY1fJRG+HyApYyBMDEcPm7vDNDujclJREFve5vJ8mSpw12Zg9S7JTu7/Mjm2Ir4L1wD1jUUervCdTf+k3GkPduZwEENiG0OWajEs6NC7j45RxuQGhnvfBzSQkGpPJ4l7Ngoal/D6IhftItjoMsX1pBxq3PtrosoQzrcfeg=
