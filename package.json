@@ -1,6 +1,6 @@
 {
   "name": "@jnields/vue-redux",
-  "version": "0.0.0-alpha.0",
+  "version": "0.0.0-alpha.1",
   "description": "Vue bindings for redux",
   "main": "./lib/index.js",
   "module": "es/index.js",
